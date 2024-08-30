@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "level": 1,
+        "task_description": "This is the user's previous chat history with this AI:\n\nUser: Add a form to contact Chloe\n\nThis is the user's current request of changes to be made:\nAdd a form to contact Chloe"
+    }
+]

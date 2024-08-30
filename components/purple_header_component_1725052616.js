@@ -135,6 +135,44 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
             </ul>
           </nav>
         </div>
+
+        <!-- Contact Chloe Form -->
+        <div class="flex-1 ml-6">
+          <button
+            id="contact-chloe-button"
+            class="btn-sm transition duration-150 ease-in-out text-white hover:text-yellow-300 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-500 hover:to-pink-400 rounded-lg px-4 py-2 shadow-lg flex items-center"
+            @click="showContactForm = true"
+          >
+            <i class='bx bxs-envelope mr-2'></i>
+            Contact Chloe
+          </button>
+        </div>
+
+        <!-- Contact Form Modal -->
+        <div v-if="showContactForm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div class="bg-white rounded-lg p-8 max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4">Contact Chloe</h2>
+            <form @submit.prevent="submitContactForm">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" v-model="contactForm.name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" v-model="contactForm.email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" v-model="contactForm.message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button type="button" @click="showContactForm = false" class="mr-2 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Cancel</button>
+                <button type="submit" class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
@@ -147,7 +185,28 @@ export default {
     return {
       expanded: false,
       tab: null,
+      showContactForm: false,
+      contactForm: {
+        name: '',
+        email: '',
+        message: ''
+      }
     };
   },
+  methods: {
+    // Contact form submission method
+    submitContactForm() {
+      console.log('Form submitted:', this.contactForm);
+      // Add your form submission logic here
+      this.showContactForm = false;
+      // Reset form fields
+      this.contactForm = {
+        name: '',
+        email: '',
+        message: ''
+      };
+    }
+    // End of contact form submission method
+  }
 };
 </script>

@@ -1,5 +1,11 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"What size should the image of the Russian blue cat be on the GUI?\", \"option1\": \"Small (thumbnail size)\", \"option2\": \"Large (full display size)\"}, {\"question 2\": \"Do you want any specific background or theme colors to complement the Russian blue cat image?\", \"option1\": \"Yes, I have specific colors in mind\", \"option2\": \"No, keep the current background/theme colors\"}], \"input_token_count\": 320, \"output_token_count\": 102, \"time_taken\": \"0:00:01.220202\"}",
+        "timestamp": "30082024212143",
+        "message_id": "guest30082024212140"
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Sure, I'll change the image to a Russian blue cat.",
         "timestamp": "30082024212141",

@@ -50,7 +50,6 @@
           </button>
 
           <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Cat_NFT_Creator_1725052613/main/images/4c7e8f4c0c9f4e60ae0573267b547775.jpeg" alt="Cats" class="mt-8 max-w-full rounded-lg" />
-          <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Cat_NFT_Creator_1725052613/main/images/4c7e8f4c0c9f4e60ae0573267b547775.jpeg" alt="Cats" class="mt-8 max-w-full rounded-lg" />
         </div>
       </div>
     </div>
@@ -73,7 +72,6 @@ export default {
     }
     // End of Meow method
   }
-};
 };
 </script>
 

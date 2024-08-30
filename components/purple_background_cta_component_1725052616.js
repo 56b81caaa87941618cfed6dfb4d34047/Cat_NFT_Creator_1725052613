@@ -43,6 +43,13 @@
             Get Started
             <span id="content-cta-arrow" class="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1 text-purple-500">-&gt;</span>
           </a>
+
+          <button id="meow-button" class="btn transition duration-150 ease-in-out group text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white mt-4 mx-2" @click="sayMeow">
+            Meow
+            <i class='bx bx-cat ml-2'></i>
+          </button>
+
+          <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Cat_NFT_Creator_1725052613/main/images/4c7e8f4c0c9f4e60ae0573267b547775.jpeg" alt="Cats" class="mt-8 max-w-full rounded-lg" />
           <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Cat_NFT_Creator_1725052613/main/images/4c7e8f4c0c9f4e60ae0573267b547775.jpeg" alt="Cats" class="mt-8 max-w-full rounded-lg" />
         </div>
       </div>
@@ -57,8 +64,16 @@ export default {
     return {
       expanded: false,
       tab: null
-    };  
+    };
+  },
+  methods: {
+    // Meow method
+    sayMeow() {
+      alert("Meow!");
+    }
+    // End of Meow method
   }
+};
 };
 </script>
 

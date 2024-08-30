@@ -1,5 +1,11 @@
 [
     {
+        "role": "chat_acknowledge",
+        "content": "Sure, I'll change the image to a Russian blue cat.",
+        "timestamp": "30082024212141",
+        "message_id": "guest30082024212140"
+    },
+    {
         "role": "user",
         "content": "Change the image to that of a Russian blue cat",
         "timestamp": "30082024212140",

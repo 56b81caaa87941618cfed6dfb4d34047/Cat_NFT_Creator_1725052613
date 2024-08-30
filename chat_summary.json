@@ -1,5 +1,29 @@
 [
     {
+        "role": "chat_ui_checklist",
+        "content": "{\"status\": \"success\", \"ui_elements_checklist\": [{\"feature\": \"Add a button to say 'Meow'\", \"checked\": true}, {\"feature\": \"Create a dropdown to select different cat breeds\", \"checked\": false}, {\"feature\": \"Implement a gallery view for displayed cat NFTs\", \"checked\": false}, {\"feature\": \"Add a sound effect when the 'Meow' button is pressed\", \"checked\": false}, {\"feature\": \"Include a share button to post NFTs on social media\", \"checked\": false}], \"input_token_count\": 308, \"output_token_count\": 108, \"time_taken\": \"0:00:01.801316\"}",
+        "message_id": "guest30082024212230",
+        "timestamp": "30082024212236",
+        "component_file_name": "purple_background_cta_component_1725052616",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
+        "role": "summary",
+        "content": "User requested the addition of a contact form for ChloeAI. AI acknowledged the request and confirmed it would work on implementing the contact form. AI then asked the user to provide more details about the project.",
+        "timestamp": "30082024212236",
+        "message_id": "guest30082024212230"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"What specific design style do you envision for the 'Meow' button?\", \"option1\": \"Playful and colorful\", \"option2\": \"Simple and minimalistic\"}, {\"question 2\": \"Where should the 'Meow' button be positioned on the interface?\", \"option1\": \"At the top of the screen\", \"option2\": \"At the bottom of the screen\"}], \"input_token_count\": 353, \"output_token_count\": 93, \"time_taken\": \"0:00:01.416677\"}",
+        "message_id": "guest30082024212230",
+        "timestamp": "30082024212233",
+        "component_file_name": "purple_background_cta_component_1725052616",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Okay, I\u2019m adding a \"Meow\" button for you.",
         "message_id": "guest30082024212230",
@@ -7,12 +31,6 @@
         "component_file_name": "",
         "div_id": "",
         "div_action": ""
-    },
-    {
-        "role": "summary",
-        "content": "Can you describe the project a bit more?",
-        "timestamp": "30082024212231",
-        "message_id": "guest30082024212230"
     },
     {
         "role": "user",
@@ -74,24 +92,6 @@
         "message_id": "guest30082024211912",
         "timestamp": "30082024211916",
         "component_file_name": "purple_header_component_1725052616",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "user",
-        "content": "Add a form to contact Chloe",
-        "message_id": "guest30082024211912",
-        "timestamp": "30082024211913",
-        "component_file_name": "purple_header_component_1725052616",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "chat_acknowledge",
-        "content": "Okay, I'll work on adding the contact form for Chloe.",
-        "message_id": "guest30082024211912",
-        "timestamp": "30082024211913",
-        "component_file_name": "",
         "div_id": "",
         "div_action": ""
     }
